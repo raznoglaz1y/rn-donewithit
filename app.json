@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Used things market App",
+    "githubUrl": "https://github.com/raznoglaz1y/rn-donewithit.git"
   }
 }
