@@ -5,10 +5,11 @@ import {
   WelcomeScreen,
   ViewImageScreen,
   ListingDetailsScreen,
+  MessagesScreen
 } from "./app/screens/index.js";
 
 const App = () => {
-  return <ViewImageScreen />;
+  return <MessagesScreen />;
 };
 
 export default App;

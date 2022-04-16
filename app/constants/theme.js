@@ -6,6 +6,7 @@ export const COLORS = {
   gray: "#7192be",
   accents: "#eda2f2",
   add: "#efabff",
+  light: "#f5f5f5"
 };
 export const SHADOWS = {
   light: {
