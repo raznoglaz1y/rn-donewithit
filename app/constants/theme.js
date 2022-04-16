@@ -6,7 +6,8 @@ export const COLORS = {
   gray: "#7192be",
   accents: "#eda2f2",
   add: "#efabff",
-  light: "#f5f5f5"
+  light: "#f5f5f5",
+  red: "#e81919",
 };
 export const SHADOWS = {
   light: {
