@@ -1,5 +1,6 @@
 import AccountScreen from "./AccountScreen";
 import ListingDetailsScreen from "./ListingDetailsScreen";
+import LoginScreen from "./LoginScreen";
 import ViewImageScreen from "./ViewImageScreen";
 import WelcomeScreen from "./WelcomeScreen";
 import ListingsScreen from "./ListingsScreen";
@@ -11,5 +12,6 @@ export {
   ViewImageScreen,
   WelcomeScreen,
   ListingsScreen,
+  LoginScreen,
   MessagesScreen,
 };

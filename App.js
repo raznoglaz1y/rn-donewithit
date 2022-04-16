@@ -10,16 +10,12 @@ import {
   ViewImageScreen,
   ListingDetailsScreen,
   ListingsScreen,
+  LoginScreen,
   MessagesScreen,
 } from "./app/screens/index.js";
 
 const App = () => {
-  return (
-    <Screen>
-      <AppPicker icon="apps" placeholder="Category" />
-      <AppTextInput icon="email" placeholder="Email" />
-    </Screen>
-  );
+  return <LoginScreen />;
 };
 
 export default App;
