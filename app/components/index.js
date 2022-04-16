@@ -7,6 +7,7 @@ import Icon from "./Icon";
 import ListItem from "./ListItem";
 import ListItemDeleteAction from "./ListItemDeleteAction";
 import ListItemSeparator from "./ListItemSeparator";
+import PickerItem from "./PickerItem";
 import Screen from "./Screen";
 
 export {
@@ -19,5 +20,6 @@ export {
   ListItem,
   ListItemDeleteAction,
   ListItemSeparator,
+  PickerItem,
   Screen,
 };

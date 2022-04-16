@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 
 import { Screen, Icon, ListItem } from "./app/components/index";
-import AppTextInput from "./app/components/AppTextInput";
+import { AppPicker, AppTextInput } from "./app/components";
 
 import {
   AccountScreen,
@@ -16,7 +16,8 @@ import {
 const App = () => {
   return (
     <Screen>
-      <AppTextInput placeholder="Hello" icon="email" />
+      <AppPicker icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="Email" />
     </Screen>
   );
 };
