@@ -8,7 +8,7 @@ import {
 } from "./app/screens/index.js";
 
 const App = () => {
-  return <ListingDetailsScreen />;
+  return <ViewImageScreen />;
 };
 
 export default App;
