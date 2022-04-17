@@ -1,6 +1,12 @@
 import React from "react";
 import { StyleSheet, Image } from "react-native";
-import { AppButton, AppText, AppTextInput, Screen } from "../components";
+import {
+  AppButton,
+  AppFormField,
+  AppTextInput,
+  ErrorMessage,
+  Screen,
+} from "../components";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
@@ -17,32 +23,30 @@ function LoginScreen(props) {
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
-        {({ handleChange, handleSubmit, errors }) => (
+        {({ handleSubmit }) => (
           <React.Fragment>
             <Image
               style={styles.logo}
               source={require("../assets/logo_color.png")}
             />
-            <AppTextInput
+            <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
               keyboardType="email-address"
-              onChangeText={handleChange("email")}
               icon="email"
+              name="email"
               placeholder="Email"
               textContentType="emailAddress"
             />
-            <AppText style={{ color: "red" }}>{errors.email}</AppText>
-            <AppTextInput
+            <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              onChangeText={handleChange("password")}
               icon="lock"
+              name="password"
               placeholder="Password"
               secureTextEntry
               textContentType="password"
             />
-            <AppText style={{ color: "red" }}>{errors.password}</AppText>
             <AppButton title="Login" onPress={handleSubmit} />
           </React.Fragment>
         )}
@@ -53,7 +57,7 @@ function LoginScreen(props) {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 15,
+    padding: 10,
   },
   logo: {
     width: 80,
