@@ -11,6 +11,7 @@ import ListItemDeleteAction from "./ListItemDeleteAction";
 import ListItemSeparator from "./ListItemSeparator";
 import PickerItem from "./PickerItem";
 import Screen from "./Screen";
+import SubmitButton from "./SubmitButton";
 
 export {
   AppButton,
@@ -26,4 +27,5 @@ export {
   ListItemSeparator,
   PickerItem,
   Screen,
+  SubmitButton,
 };

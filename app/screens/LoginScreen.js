@@ -6,6 +6,7 @@ import {
   AppTextInput,
   ErrorMessage,
   Screen,
+  SubmitButton,
 } from "../components";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -23,7 +24,7 @@ function LoginScreen(props) {
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
-        {({ handleSubmit }) => (
+        {() => (
           <React.Fragment>
             <Image
               style={styles.logo}
@@ -47,7 +48,7 @@ function LoginScreen(props) {
               secureTextEntry
               textContentType="password"
             />
-            <AppButton title="Login" onPress={handleSubmit} />
+            <SubmitButton title="Login" />
           </React.Fragment>
         )}
       </Formik>
