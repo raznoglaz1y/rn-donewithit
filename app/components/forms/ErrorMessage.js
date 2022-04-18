@@ -1,8 +1,8 @@
 import React from "react";
-import AppText from "./AppText";
+import AppText from "../AppText";
 import { StyleSheet } from "react-native";
 
-import { COLORS } from "../constants/theme";
+import { COLORS } from "../../constants/theme";
 
 function ErrorMessage({ error, visible }) {
   if (!visible || !error) return null;

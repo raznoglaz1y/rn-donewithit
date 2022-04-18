@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native'
 
-import {COLORS} from "../constants/theme"
+import {COLORS} from "../../constants/theme"
 
 function ListItemSeparator() {
     return (

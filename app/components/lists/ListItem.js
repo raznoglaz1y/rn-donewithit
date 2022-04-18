@@ -1,10 +1,10 @@
 import React from "react";
 import { View, StyleSheet, Image, TouchableHighlight } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Swipeable from "react-native-gesture-handler/Swipeable";
+import {MaterialCommunityIcons} from '@expo/vector-icons'
 
-import AppText from "./AppText";
-import { COLORS } from "../constants/theme";
+import AppText from "../AppText";
+import { COLORS } from "../../constants/theme";
 
 function ListItem({
   title,
@@ -30,6 +30,7 @@ function ListItem({
               </AppText>
             )}
           </View>
+          <MaterialCommunityIcons color={COLORS.medium} name="chevron-right" size={25}/>
         </View>
       </TouchableHighlight>
     </Swipeable>

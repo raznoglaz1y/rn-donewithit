@@ -9,13 +9,17 @@ import {
   WelcomeScreen,
   ViewImageScreen,
   ListingDetailsScreen,
+  ListingEditScreen,
   ListingsScreen,
   LoginScreen,
   MessagesScreen,
 } from "./app/screens/index.js";
 
 const App = () => {
-  return <LoginScreen />;
+  return (
+
+      <ListingEditScreen />
+  );
 };
 
 export default App;
