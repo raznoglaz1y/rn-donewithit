@@ -44,7 +44,7 @@ function ListingEditScreen(props) {
           maxLength={8}
           name="price"
           placeholder="Price"
-          width={120}
+          width="100%"
         />
         <AppFormPicker
           items={categories}
@@ -52,7 +52,7 @@ function ListingEditScreen(props) {
           numberOfColumns={3}
           PickerItemComponent={CategoryPickerItem}
           placeholder="Category"
-          width="50%"
+          width="100%"
         />
         <AppFormField
           maxLength={255}
